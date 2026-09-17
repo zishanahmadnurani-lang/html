@@ -1,5 +1,5 @@
 # html
-this is my first repo-HTML
+all HTML project from basic to advance-HTML
 <br>
 authore- zishan ahmad nurani
 
