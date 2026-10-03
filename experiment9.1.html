@@ -3,31 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css table property</title>
+    <title>Horizontal Navigation</title>
     <style>
-        table, th, td {
-            border: 1px solid;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
         }
-        table {
-            width: 100%;
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        section {
+            padding: 20px;
+            font-family: Arial, sans-serif;
         }
     </style>
 </head>
 <body>
-    <h2>full-width table</h2>
-    <table>
-        <tr>
-            <th>firstname</th>
-            <th>lastanme</th>
-        </tr>
-        <tr>
-            <td>peter</td>
-            <td>griffin</td>
-        </tr>
-        <tr>
-            <td>lois</td>
-            <td>giffin</td>
-        </tr>
-    </table>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to the home section.</p>
+    </section>
+
+    <section id="news">
+        <h2>News</h2>
+        <p>Latest updates and announcements.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with us.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>Learn more about our company.</p>
+    </section>
 </body>
 </html>
